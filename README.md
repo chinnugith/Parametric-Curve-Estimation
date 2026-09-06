@@ -235,3 +235,61 @@ Parametric-Curve-Estimation/
 │   └── curve_visualization.html
 │
 └── README.md
+
+## 11. How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/chinnugith/Parametric-Curve-Estimation.git
+cd Parametric-Curve-Estimation
+2. Create a virtual environment
+python -m venv .venv
+3. Activate the environment
+
+Windows PowerShell:
+
+.venv\Scripts\Activate.ps1
+4. Install dependencies
+pip install -r requirements.txt
+5. Run the analysis scripts
+python src/01_data_analysis.py
+python src/02_estimate_parameters.py
+python src/03_validate_model.py
+python src/04_uniform_l1.py
+python src/05_parameter_accuracy.py
+python src/06_save_results.py
+python src/07_export_curve.py
+python src/08_create_visualization.py
+6. View the visualization
+
+Open:
+
+results/curve_visualization.html
+
+
+### Section 12 — Tools
+
+```markdown
+## 12. Tools and Technologies
+
+- Python 3.11
+- NumPy
+- SciPy
+- Differential Evolution
+- CSV
+- HTML / SVG visualization
+- Desmos for interactive visualization
+- Git and GitHub
+Final Conclusion
+## 13. Conclusion
+
+The unknown parameters of the given parametric curve were estimated using bounded numerical optimization.
+
+The final estimated values are:
+
+- θ = 30°
+- M = 0.03
+- X = 55
+
+The recovered parameter range and reconstruction errors were also validated. The fitted curve closely matches the given data points, demonstrating that the estimated parameters provide a very good fit to the dataset.
