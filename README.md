@@ -101,13 +101,15 @@ Differential Evolution was used as the optimization method because it performs g
 
 The objective function measures the difference between:
 
-v_observed
+`v_observed`
 
 and
 
-e^(Mt) sin(0.3t)
+`e^(Mt) sin(0.3t)`
 
 for the recovered values of `t`.
+
+The optimization produced a very small objective value, indicating that the estimated parameters provide a close fit to the given data.
 
 ---
 
@@ -234,13 +236,11 @@ Parametric-Curve-Estimation/
 │   ├── fitted_curve.csv
 │   └── curve_visualization.html
 │
+├── .gitignore
+├── requirements.txt
 └── README.md
-
-## 11. How to Run
-
-### 1. Clone the repository
-
-```bash
+11. How to Run
+1. Clone the repository
 git clone https://github.com/chinnugith/Parametric-Curve-Estimation.git
 cd Parametric-Curve-Estimation
 2. Create a virtual environment
@@ -263,33 +263,27 @@ python src/07_export_curve.py
 python src/08_create_visualization.py
 6. View the visualization
 
-Open:
+Open the following file in a web browser:
 
 results/curve_visualization.html
 
-
-### Section 12 — Tools
-
-```markdown
-## 12. Tools and Technologies
-
-- Python 3.11
-- NumPy
-- SciPy
-- Differential Evolution
-- CSV
-- HTML / SVG visualization
-- Desmos for interactive visualization
-- Git and GitHub
-Final Conclusion
-## 13. Conclusion
+12. Tools and Technologies
+Python 3.11
+NumPy
+SciPy
+Differential Evolution
+CSV
+HTML / SVG visualization
+Desmos for interactive visualization
+Git and GitHub
+13. Conclusion
 
 The unknown parameters of the given parametric curve were estimated using bounded numerical optimization.
 
 The final estimated values are:
 
-- θ = 30°
-- M = 0.03
-- X = 55
+θ = 30°
+M = 0.03
+X = 55
 
 The recovered parameter range and reconstruction errors were also validated. The fitted curve closely matches the given data points, demonstrating that the estimated parameters provide a very good fit to the dataset.
